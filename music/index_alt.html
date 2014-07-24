@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ben's Music</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+		<!--==============GOOGLE FONT - PT SANS=================-->
+		<link href="http://fonts.googleapis.com/css?family=PT%20Sans:400,700" rel="stylesheet" type="text/css">
+		
+		<!--==============MAIN CSS=================-->
+		
+		<link href="css/band.css" rel="stylesheet" media="all">
+		
+		<!--Tweet CSS-->
+		<link href="css/jquery.tweet.css" rel="stylesheet" media="all">
+		
+		<!--===================FLEX SLIDER=======================-->
+		
+		<link rel="stylesheet" href="css/flexslider.css" />
+		<script src="js/jquery-1.9.0.min.js"></script>
+		<script src="js/jquery.flexslider.js"></script>
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('.flexslider').flexslider({
+					animation: "slide"
+				});
+			});
+		</script>
+		
+		<!--=============================FANCY BOX STARTS================================-->
+		
+		<!-- Add mousewheel plugin (this is optional) -->
+		<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+		
+		<!-- Add fancyBox main JS and CSS files -->
+		<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.4"></script>
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.4" media="screen" />
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.fancybox').fancybox({
+					helpers : {
+						overlay : {
+							locked : false,
+						}
+					}
+				});
+			});
+		</script>
+		
+		<!--============================FANCY BOX ENDS========================================-->
+		
+		<!--============================ PARALLAX SCRIPT ========================================-->
+		
+		<script src="js/stellar.js"></script>
+		<script>
+			$(function(){
+				$.stellar({
+					horizontalScrolling: false,
+					verticalOffset: 40
+				});
+			});
+		</script>
+		
+		<!--==============CONTACT FORM=================-->
+		<script src="js/contact_form.js"></script>
+	</head>
+	
+	<body>
+		<a id="home"></a> 
+		<!--==============HEADER =================-->
+		<div class="jumbotron masthead" data-stellar-background-ratio="0.5"> 
+			
+			<!--==============Logo & Menu Bar=================-->
+			
+			<div class="navbar navbar-fixed-top navbar-absolute">
+				<div class="navbar-inner">
+					<div class="container"> 						
+						<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+						<div class="nav-collapse collapse"> 							
+							<ul class="nav pull-right">
+								<li class="active"><a href="#home">HOME</a></li>								
+								<li class="dropdown"> <a href="#audio" class="dropdown-toggle" data-toggle="dropdown">PLAYLIST <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="blog.html#062014">JUNE 2014</a></li>
+										<li><a href="blog.html#052014">MAY 2014</a></li>
+										<li><a href="blog.html#042014">APRIL 2014</a></li>
+										<li><a href="blog.html#032014">MARCH 2014</a></li>
+										<li><a href="blog.html#022014">FEBRUARY 2014</a></li>
+										<li><a href="blog.html#012014">JANUARY 2014</a></li>								
+									</ul>
+									<li><a href="#about">ARTISTS</a></li>
+									<li><a href="#gallery">SINGLES</a></li>
+									<li><a href="#media">VIDEOS</a></li>	
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container"> 					
+					<!--==============SLIDER STARTS=================-->
+					<p class="text-center hidden-phone"> <a href="#audio"><img src="images/arrow-bottom.png" alt="sroll to arrow"></a></p>
+					<div class="flexslider">
+						<ul class="slides">
+							<li>
+								<div class="hero-unit" style="padding-top: 10px;">
+									<p class="text-center"><img src="images/logo-big.png" alt="band logo"></p>
+									<h1>BEN'S MUSIC</h1>
+									<h3 class="subtitle fancy hidden-phone"><span>Chill-out music</span></h3>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			<!--============== AUDIO GALLERY ==============-->			
+			<div class="container"> <a id="audio"></a>
+				<div class="row-fluid PageHead">
+					<div class="span12">
+						<h3>PLAYLIST<span> <img src="images/underline.png" alt="______"></span></h3>
+					</div>
+				</div>
+				<div class="row-fluid Gallery">
+					<div class="span12">
+						<div class="audioembed">
+							<!--<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/130692766&amp;color=ff5500&amp;auto_play=false&amp;show_artwork=true"></iframe>-->
+							<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/40715985&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+						</div>
+						<div class="audioembed">
+							<p><a href="blog.html" class="btn btn-danger">MORE PLAYLIST</a></p>
+						</div>
+						<br>
+						<br>
+					</div>
+				</div>
+			</div>
+			<!--============== FEATURED ARTISTS =================-->		
+			<div class="about" id="about" data-stellar-background-ratio="0.5">
+				<div class="container">
+					<div class="row-fluid PageHead inverse">
+						<div class="span12">
+							<h3>FEATURED ARTISTS<span> <img src="images/underline.png" alt="______"></span></h3>
+						</div>
+					</div>
+					<div class="row-fluid theteam">
+						<div class="span2"><img src="https://i1.sndcdn.com/avatars-000062248933-4u41f4-t500x500.jpg?e76cf77" alt="team"><p style="text-align:center;">Akshin</p></div>
+						<div class="span2"><img src="https://i1.sndcdn.com/avatars-000085595117-1cgjkt-t500x500.jpg?e76cf77" alt="team"><p style="text-align:center;">De Hofnar</p></div>
+						<div class="span2"><img src="https://i1.sndcdn.com/avatars-000072082023-kb0a9f-t500x500.jpg?e76cf77" alt="team"><p style="text-align:center;">DER WANDERER</p></div>
+						<div class="span2"><img src="https://i1.sndcdn.com/avatars-000087442517-1kmfri-t500x500.jpg?e76cf77" alt="team"><p style="text-align:center;">Patrick Ebert</p></div>
+						<div class="span2"><img src="https://i1.sndcdn.com/avatars-000050178392-rshg3x-t500x500.jpg?e76cf77" alt="team"><p style="text-align:center;">Robin Schulz</p></div>
+						<div class="span2"><img src="https://i1.sndcdn.com/avatars-000058272344-wzxouv-t500x500.jpg?e76cf77" alt="team"><p style="text-align:center;">Stefan Biniak</p></div>					
+					</div>
+				</div>
+			</div>
+			
+			<!--============== FEATURED SINGLES ==============-->
+			
+			<div class="container"> <a id="gallery"></a>
+				<div class="row-fluid PageHead">
+					<div class="span12">
+						<h3>FEATURED SINGLES<span> <img src="images/underline.png" alt="______"></span></h3>
+					</div>
+				</div>
+				<div class="row-fluid Gallery">
+					<div class="span12">
+						<ul>
+							<li><a class="fancybox" href="https://soundcloud.com/freddyverano/mark-tarmonea-so-berlin-freddy-verano-radio-edit" target="_blank" data-fancybox-group="gallery" title="Freddy Verano"><img src="https://i1.sndcdn.com/artworks-000082170145-w9z25e-t500x500.jpg?e76cf77" alt="" /></a></li>
+							<li><a class="fancybox" href="https://soundcloud.com/kungsmusic/kungs-candy-feat-jasmine-thompson" target="_blank" data-fancybox-group="gallery" title="Kungs"><img src="https://i1.sndcdn.com/artworks-000084405171-31b45a-t500x500.jpg?e76cf77" alt="" /></a></li>
+							<li><a class="fancybox" href="https://soundcloud.com/marktarmonea/mark-tarmonea-freier-fall-2" target="_blank" data-fancybox-group="gallery" title="Mark Tarmonea"><img src="https://i1.sndcdn.com/artworks-000078929265-8ayn2q-t500x500.jpg?e76cf77" alt="" /></a></li>
+							<li><a class="fancybox" href="https://soundcloud.com/saite-zwei/liberation-of-time" target="_blank" data-fancybox-group="gallery" title="Saite Zwei"><img src="https://i1.sndcdn.com/artworks-000075303063-iahjxl-t500x500.jpg?e76cf77" alt="" /></a></li>
+							<li><a class="fancybox" href="https://soundcloud.com/knuckle-g/montmartre-inside-of-me-knuckle-g-remix-1" target="_blank" data-fancybox-group="gallery" title="Knuckle G"><img src="https://i1.sndcdn.com/artworks-000083299549-ismlft-t500x500.jpg?e76cf77" alt="" /></a></li>
+							<li><a class="fancybox" href="https://soundcloud.com/flogruber/first-aid-kit-winter-is-all-over-you-fg-remix" target="_blank" data-fancybox-group="gallery" title="FG (Flo Gruber)"><img src="https://i1.sndcdn.com/artworks-000083264301-1b2mlg-t500x500.jpg?e76cf77" alt="" /></a></li>
+							<li><a class="fancybox" href="https://soundcloud.com/wdlmusic/bobs-beat-feat-mawe-2" target="_blank" data-fancybox-group="gallery" title="wdlmusic"><img src="https://i1.sndcdn.com/artworks-000083488728-x21wor-t500x500.jpg?e76cf77" alt="" /></a></li>
+							<li><a class="fancybox" href="https://soundcloud.com/l-c-a-w/the-sun-remix" target="_blank" data-fancybox-group="gallery" title="L C A W"><img src="https://i1.sndcdn.com/artworks-000082282121-ksruro-t500x500.jpg?e76cf77" alt="" /></a></li>
+						</ul>
+						<p class="sectionfooter text-center">&nbsp; </p>
+					</div>
+				</div>
+			</div>
+			
+			<!--============== FEATURED VIDEOS ==============-->
+			
+			<div class="ourmedia" id="media" data-stellar-background-ratio="0.5">
+				<div class="container">
+					<div class="row-fluid PageHead inverse">
+						<div class="span12">
+							<h3>FEATURED VIDEOS<span> <img src="images/underline.png" alt="______"></span></h3>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12 text-center mediavideo">
+							<iframe width="640" height="360" src="https://www.youtube.com/embed/352IcwNtYTQ" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="row-fluid MediaThumb">
+						<div class="span3 playvideo" data-url="https://www.youtube.com/embed/352IcwNtYTQ"> <img src="http://ecx.images-amazon.com/images/I/516pN2L0wSL._SL500_AA280_.jpg" alt="media">
+							<p>Parov Stelar feat. Marvin Gaye - Keep On Dancing</p>
+						</div>
+						<div class="span3 playvideo" data-url="http://www.youtube.com/embed/4NZdggNUvq0"> <img src="http://slayshtank.com/wp-content/uploads/2012/01/url2.jpg" alt="media">
+							<p>Maxence Cyrin - Where Is My Mind (The Pixies Piano Cover)</p>
+						</div>
+						<div class="span3 playvideo" data-url="http://www.youtube.com/embed/xC31wYKZ-5U"> <img src="http://soundeo.com/images/cover/2014/05/05/1282409-nine-to-five-and-taxi-driver-500.jpg" alt="media">
+							<p>Zoowax - Nine To Five</p>
+						</div>
+						<div class="span3 playvideo" data-url="http://www.youtube.com/embed/YswhopSfmAI"> <img src="http://ecx.images-amazon.com/images/I/614EM1KPQHL.jpg" alt="media">
+							<p>Wax Tailor - Que sera (Live Paris, Olympia 2010)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<!--============== FOOTER ==============-->
+			
+			<div class="footer" id="footer" data-stellar-background-ratio="0.8">
+				<div class="container">
+					<div class="row-fluid PageHead inverse">
+						<div class="span12">
+							<h3>Follow me<span> <img src="images/underline.png" alt="______"></span></h3>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span12 TwitterFeed hidden-phone"> 														
+							<div id="TwitterBlock">
+								<div id="TwitterLogo"><iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fbens_music&color=white_orange&size=64" style="width: 64px; height: 64px;"></iframe></div>
+							</div>														
+						</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span12 socialButtons"> <a href="https://twitter.com/ben_smusic" target="_blank"> <img src="images/twitter_icon.png" alt="twitter"></a> <a href="https://www.facebook.com/speidel.benjamin" target="_blank"><img src="images/facebook_icon.png" alt="facebook"></a> <a href="https://www.linkedin.com/pub/benjamin-speidel/88/a/3a7" target="_blank"><img src="images/linkedin_icon.png" alt="linkedin"></a> </div>
+				</div>
+			</div>
+			
+		</div>
+		<!--===Back to top======--> 
+		<a href="#" class="scrollup">Scroll</a> 
+		
+		<!--==============QUERY LIBRARY=================--> 
+		
+		<script src="js/jquery.easing.1.2.js"></script> 
+		
+		<!--==============Mordernizr =================--> 
+		
+		<script src="js/modernizr.js"></script> 
+		
+		<!--==============BOOTSTRAP JS=================--> 
+		
+		<script src="js/bootstrap.js"></script> 
+		<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script> 
+		
+		<!--==========ONE PAGE SCROLLING SCRIPTS STARTS===============--> 
+		
+		<script>
+			$(function() {
+				$('.nav li a, .jumbotron p a').bind('click',function(event){
+					var $anchor2 = $(this).parent();
+					var $anchor = $(this);
+					$('.nav  li').removeClass('active');
+					$anchor2.addClass('active');
+					
+					
+					$('html, body').stop().animate({
+						scrollTop: $($anchor.attr('href')).offset().top - 50
+					}, 1500,'easeInOutExpo');
+					/*
+						if you don't want to use the easing effects:
+						$('html, body').stop().animate({
+						scrollTop: $($anchor.attr('href')).offset().top
+						}, 1000);
+					*/
+					event.preventDefault();
+				});
+			});
+		</script> 
+		
+		<!--=============ONE PAGE SCROLLING SCRIPTS ENDS============--> 
+		
+		<!-- ======= TWITTER FEED API 1.1 ========= --> 
+		
+		<script src="twitter/jquery.tweet.js"></script> 
+		<script type='text/javascript'>
+			jQuery(function($){
+				$("#ticker").tweet({
+					username: "tnw", /*Enter your Twitter username inside quotes eg: web3canvas, barackobama etc*/
+					page: 1, /*How many tweets to show at a time, You need to increase #ticker height if you increased this value*/
+					avatar_size: null, /*If you want to show your twitter avatar, just change null to avatar size you needed eg: 32, 50, 80 etc..*/
+					count: 20, /*Total counts of tweets. */
+					loading_text: "Bringing latest tweets..." /*Loading text*/
+					}).bind("loaded", function() {
+					var ul = $(this).find(".tweet_list");
+					var ticker = function() {
+						setTimeout(function() {
+							var top = ul.position().top;
+							var h = ul.height();
+							var incr = (h / ul.children().length);
+							var newTop = top - incr;
+							if (h + newTop <= 0) newTop = 0;
+							ul.animate( {top: newTop}, 500 ); /*Speed of Scrolling*/
+							ticker();
+						}, 5000); /*Delay of changing tweet*/
+					};
+					ticker();
+				});
+			});
+			
+		</script> 
+		
+		<!-- ======= SHOW HIDE EVENTS - v1.1 ========= --> 
+		<script>
+			
+			$(function() {
+				$(".showmore").click(function() {
+					$(".moreevents").slideToggle();
+					$(".showmore span").text(($(".showmore span").text() == "SHOW ALL EVENTS") ? "HIDE ALL EVENTS" : "SHOW ALL EVENTS") ; 
+				}); 
+			});
+			
+		</script> 
+		
+		<!--=============PLAY VIDEO============--> 
+		
+		<script>
+			
+			$(document).ready(function(){ 
+				
+				$(".playvideo").click(function(){
+					var videourl = $(this).data("url");
+					$(this).append('<span class="videoload">Loading video...</span>')
+					$('.mediavideo iframe').attr('src', videourl);
+					setTimeout(function() {
+						$('.videoload').remove();
+					},1000);
+				});
+				
+			});
+		</script> 
+		
+		<!--=============BACK TO TOP STARTS============--> 
+		
+		<script>
+			$(document).ready(function(){ 
+				
+				$(window).scroll(function(){
+					if ($(this).scrollTop() > 800) {
+						$('.scrollup').fadeIn();
+						} else {
+						$('.scrollup').fadeOut();
+					}
+				}); 
+				
+				$('.scrollup').click(function(){
+					$("html, body").animate({ scrollTop: 0 }, 600);
+					return false;
+				});
+				
+			});
+		</script> 
+		
+		<!--=============BACK TO TOP ENDS============-->
+		
+	</body>
+</html>
